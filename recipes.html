@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рецепти | Кулінарний блог</title>
+  <meta name="description" content="Перегляньте добірку українських рецептів: перші страви, другі страви, десерти та напої для домашнього столу.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/Logo.png" alt="Logo"> DeliciousMood</a>
+      <nav class="top-nav" aria-label="Головне меню">
+        <a href="index.html" class="nav-link">Головна</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle">Рецепти</button>
+          <div class="dropdown-menu">
+            <a href="recipes.html?category=first" class="dropdown-item">Перші страви</a>
+            <a href="recipes.html?category=main" class="dropdown-item">Другі страви</a>
+            <a href="recipes.html?category=dessert" class="dropdown-item">Десерти</a>
+            <a href="recipes.html?category=drink" class="dropdown-item">Напої</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Меню рецептів</span>
+          <h1>Смаки для кожного дня</h1>
+          <p>Від класичних супів до солодких десертів та освіжаючих напоїв — знайдіть свій новий улюблений рецепт.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recipe-filters" aria-label="Фільтри рецептів">
+      <div class="container">
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Усі</button>
+          <button class="filter-btn" data-filter="first">Перші страви</button>
+          <button class="filter-btn" data-filter="main">Другі страви</button>
+          <button class="filter-btn" data-filter="dessert">Десерти</button>
+          <button class="filter-btn" data-filter="drink">Напої</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recipe-grid-section">
+      <div class="container">
+        <div class="recipe-grid">
+          <article class="recipe-card" data-category="first">
+            <img src="img/borch.jpg" alt="Класичний борщ у тарілці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Перші страви</p>
+              <h3>Борщ класичний</h3>
+              <p>Натуральний борщ із буряком, капустою і домашнім сметанним топінгом.</p>
+              <a href="recipe-borshch.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="first">
+            <img src="img/kulish.jpg" alt="Куліш у мисці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Перші страви</p>
+              <h3>Куліш</h3>
+              <p>Традиційна українська страва з пшеничної каші та овочів у м'ясному бульйоні.</p>
+              <a href="recipe-kulish.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="main">
+            <img src="img/banosh.jpg" alt="Банош з овочами" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Другі страви</p>
+              <h3>Банош</h3>
+              <p>Гуцульська страва з кукурудзяного борошна та м'яса в ароматному соусі.</p>
+              <a href="recipe-banosh.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="main">
+            <img src="img/mezivo.jpg" alt="Меживо на тарілці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Другі страви</p>
+              <h3>Меживо</h3>
+              <p>Холодна закуска з тушкованих овочів у томатно-оцтовому соусі, що найкраще смакує на наступний день.</p>
+              <a href="recipe-mezhyvo.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="dessert">
+            <img src="img/home.jpg" alt="Монастирська хата" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Десерт</p>
+              <h3>Монастирська хата</h3>
+              <p>Святковий десерт з ніжного тіста та ягідним джемом, традиційна українська солодощ.</p>
+              <a href="recipe-monastyrska-hata.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="dessert">
+            <img src="img/vareniky.jpg" alt="Вареники з вишнею" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Десерт</p>
+              <h3>Вареники з вишнею</h3>
+              <p>Нежні вареники з м'якою серединкою та сичужень вишневою начинкою, освіжаюча солодощ.</p>
+              <a href="recipe-varenyky.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="drink">
+            <img src="img/uzvar.jpg" alt="Узвар у чашці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Напої</p>
+              <h3>Узвар</h3>
+              <p>Традиційний український напій з компоту сухофруктів, медом та пряностями для свят.</p>
+              <a href="recipe-uzvar.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card" data-category="drink">
+            <img src="img/kvas.jpg" alt="Домашній квас" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Напої</p>
+              <h3>Квас</h3>
+              <p>Освіжаючий ферментований напій з часом та пряностями, традиційний молоко-хлібний напій.</p>
+              <a href="recipe-kvas.html" class="card-link">Переглянути рецепт</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Виконали: Плакида Вікторія<br>
+Твердохліб Діана</p>
+      <nav aria-label="Футер меню">
+        <a href="index.html">Головна</a>
+        <a href="recipes.html">Рецепти</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

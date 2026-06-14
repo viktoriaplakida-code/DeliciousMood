@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Узвар | Рецепт</title>
+  <meta name="description" content="Рецепт традиційного українського узвару — компоту з сухофруктів. Інтерактивний калькулятор порцій.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/Logo.png" alt="Logo"> DeliciousMood</a>
+      <nav class="top-nav" aria-label="Головне меню">
+        <a href="index.html" class="nav-link">Головна</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle">Рецепти</button>
+          <div class="dropdown-menu">
+            <a href="recipes.html?category=first" class="dropdown-item">Перші страви</a>
+            <a href="recipes.html?category=main" class="dropdown-item">Другі страви</a>
+            <a href="recipes.html?category=dessert" class="dropdown-item">Десерти</a>
+            <a href="recipes.html?category=drink" class="dropdown-item">Напої</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero recipe-hero" style="background-image: url('https://images.unsplash.com/photo-1585518419759-66a05df0cc69?auto=format&fit=crop&w=1400&q=80');">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content hero-small">
+        <span class="eyebrow">Напої</span>
+        <h1>Узвар</h1>
+        <p>Традиційний український компот з сухофруктів, медом та пряностями для святкового столу.</p>
+        <a class="btn btn-primary" href="recipes.html">До всіх рецептів</a>
+      </div>
+    </section>
+
+    <nav class="breadcrumb" aria-label="Хлібні крихти">
+      <div class="container">
+        <a href="index.html">Головна</a>
+        <span>›</span>
+        <a href="recipes.html">Рецепти</a>
+        <span>›</span>
+        <span>Узвар</span>
+      </div>
+    </nav>
+
+    <div class="container recipe-page">
+      <article class="recipe-main">
+        <div class="recipe-intro">
+          <p>Узвар — це ароматний компот з сухофруктів, що традиційно подається на Різдво та інші свята. Напій з глибоким смаком та корисними властивостями.</p>
+          <div class="recipe-tags">
+            <span>⏱ Час: 30 хв + настоювання</span>
+            <span>📈 Рівень: легкий</span>
+            <span>🍽 Порцій: 4</span>
+          </div>
+        </div>
+
+        <section class="calculator-section">
+          <div class="section-header">
+            <span class="eyebrow">Інгредієнти</span>
+            <h2>Калькулятор порцій</h2>
+          </div>
+          <div class="recipe-calculator" data-default-servings="4">
+            <label class="servings-label">Кількість порцій</label>
+            <input class="servings-input" type="number" min="1" value="4">
+            <div class="ingredients-list">
+              <div class="ingredient-row">
+                <label>Сухі яблука</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="0.1" step="0.1" value="100" data-baseline="100" data-unit="г">
+                  <span class="unit">г</span>
+                </div>
+              </div>
+              <div class="ingredient-row">
+                <label>Сухі груші</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="0.1" step="0.1" value="100" data-baseline="100" data-unit="г">
+                  <span class="unit">г</span>
+                </div>
+              </div>
+              <div class="ingredient-row">
+                <label>Сухі сливи</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="0.1" step="0.1" value="50" data-baseline="50" data-unit="г">
+                  <span class="unit">г</span>
+                </div>
+              </div>
+              <div class="ingredient-row">
+                <label>Сухі шипшини</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="0.1" step="0.1" value="30" data-baseline="30" data-unit="г">
+                  <span class="unit">г</span>
+                </div>
+              </div>
+              <div class="ingredient-row">
+                <label>Мед</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="0.1" step="0.1" value="60" data-baseline="60" data-unit="г">
+                  <span class="unit">г</span>
+                </div>
+              </div>
+              <div class="ingredient-row">
+                <label>Вода</label>
+                <div class="ingredient-control">
+                  <input class="ingredient-qty" type="number" min="10" step="10" value="1500" data-baseline="1500" data-unit="мл">
+                  <span class="unit">мл</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary reset-calculator">Скинути до стандартних</button>
+          </div>
+        </section>
+
+        <section class="recipe-steps">
+          <div class="section-header">
+            <span class="eyebrow">Інструкція</span>
+            <h2>Готуємо узвар</h2>
+          </div>
+          <ol>
+            <li>Промийте сухофрукти та залийте холодною водою на 15 хвилин.</li>
+            <li>Злийте воду, залийте свіжою водою та доведіть до кипіння.</li>
+            <li>Зменшіть вогонь та варіть на слабкому вогні 15-20 хвилин.</li>
+            <li>Додайте мед та перемішайте до розчинення.</li>
+            <li>Зніміть з вогню та дайте настоятися 30-60 хвилин.</li>
+            <li>Подавайте теплим або охолодженим.</li>
+          </ol>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Виконали: Плакида Вікторія<br>
+Твердохліб Діана</p>
+      <nav aria-label="Футер меню">
+        <a href="index.html">Головна</a>
+        <a href="recipes.html">Рецепти</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

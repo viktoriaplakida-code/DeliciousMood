@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашня кухня | Український кулінарний блог</title>
+  <meta name="description" content="Смачний блог про українську та домашню кухню: рецепти, історії та натхнення для душевних обідів.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="img/Logo.png" alt="Logo"> DeliciousMood</a>
+      <nav class="top-nav" aria-label="Головне меню">
+        <a href="index.html" class="nav-link active">Головна</a>
+        <div class="nav-dropdown">
+          <button class="nav-link dropdown-toggle">Рецепти</button>
+          <div class="dropdown-menu">
+            <a href="recipes.html?category=first" class="dropdown-item">Перші страви</a>
+            <a href="recipes.html?category=main" class="dropdown-item">Другі страви</a>
+            <a href="recipes.html?category=dessert" class="dropdown-item">Десерти</a>
+            <a href="recipes.html?category=drink" class="dropdown-item">Напої</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow">Тепло домашньої кухні</span>
+        <h1>Смакуйте українську їжу, яка зігріває серце.</h1>
+        <p>Рецепти для сімейних вечерь, святкових обідів та щоденного затишку. Простий блог з душевними стравами та корисними порадами.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="recipes.html">Переглянути рецепти</a>
+          <a class="btn btn-secondary" href="#categories">Категорії страв</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="container">
+        <div class="split-card">
+          <div>
+            <h2>Про проєкт</h2>
+            <p>Цей кулінарний блог створений для тих, хто любить українську домашню кухню: від щільного борщу до ніжних десертів. Тут ви знайдете прості рецепти, поради та красиві ідеї для столу.</p>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h3>Натуральні інгредієнти</h3>
+              <p>Ідеї з доступними продуктами, щоб готувати швидко та смачно.</p>
+            </div>
+            <div class="feature-card">
+              <h3>Інтерактивні рецепти</h3>
+              <p>Кожен рецепт має калькулятор інгредієнтів для вашого зручного приготування.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section popular" aria-labelledby="popular-recipes-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Популярні рецепти</span>
+          <h2 id="popular-recipes-title">Вибране з блогу</h2>
+        </div>
+        <div class="recipe-grid">
+          <article class="recipe-card">
+            <img src="img/borch.jpg" alt="Класичний борщ у глибокій мисці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Перші страви</p>
+              <h3>Борщ класичний</h3>
+              <p>Ніжний борщ із домашнім смаком, яскравим кольором та ароматом свіжої зелені.</p>
+              <a href="recipe-borshch.html" class="card-link">Дивитися рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <img src="img/kulish.jpg" alt="Куліш у мисці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Перші страви</p>
+              <h3>Куліш</h3>
+              <p>Традиційна українська страва з пшеничної каші та м'яса в багатому бульйоні.</p>
+              <a href="recipe-kulish.html" class="card-link">Дивитися рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <img src="img/banosh.jpg" alt="Банош з овочами на тарілці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Другі страви</p>
+              <h3>Банош</h3>
+              <p>Традиційна гуцульська страва з кукурудзяного борошна та м'яса в ароматному соусі.</p>
+              <a href="recipe-banosh.html" class="card-link">Дивитися рецепт</a>
+            </div>
+          </article>
+          <article class="recipe-card">
+            <img src="img/home.jpg" alt="Монастирська хата на тарілці" loading="lazy" height="400px">
+            <div class="card-body">
+              <p class="category">Десерт</p>
+              <h3>Монастирська хата</h3>
+              <p>Ніжне тістечко з ослизлим напівфабрикатом та ягідним джемом, святковий десерт.</p>
+              <a href="recipe-monastyrska-hata.html" class="card-link">Дивитися рецепт</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Смакуй у різних стилях</span>
+          <h2>Категорії страв</h2>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <h3>Перші страви</h3>
+            <p>Гарячі супи та крем-супи для домашнього обіду.</p>
+          </article>
+          <article class="category-card">
+            <h3>Другі страви</h3>
+            <p>М'ясо, овочі та гарніри, які добре тримаються на святковому столі.</p>
+          </article>
+          <article class="category-card">
+            <h3>Десерти</h3>
+            <p>Натуральні солодощі, які дарують затишок після вечері.</p>
+          </article>
+          <article class="category-card">
+            <h3>Напої</h3>
+            <p>Освіжаючі лимонади та домашні напої для кожного сезону.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Цікаві факти</span>
+          <h2>Найкуховарніші історії</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>Борщ завжди був символом української гостинності, а додавання часнику й свіжої зелені робить його справді домашнім.</p>
+            <span>— Традиція сімейних обідів</span>
+          </article>
+          <article class="testimonial-card">
+            <p>Крем-суп з грибів можна приготувати з сезонних лісових грибів або звичайних шампіньйонів — результат завжди ніжний.</p>
+            <span>— Порада шефа</span>
+          </article>
+          <article class="testimonial-card">
+            <p>Домашній лимонад із м'ятою та базиліком повністю змінює настрій і добре поєднується з легкими літніми стравами.</p>
+            <span>— Секрет свіжості</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Виконали: Плакида Вікторія<br>
+Твердохліб Діана</p>
+      <nav aria-label="Футер меню">
+        <a href="index.html">Головна</a>
+        <a href="recipes.html">Рецепти</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
